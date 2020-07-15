@@ -6,6 +6,8 @@
     <Authors>Kenneth Carter</Authors>
     <Version>4.1.2</Version>
     <SignAssembly>true</SignAssembly>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/SubSonic-Core/SubSonic.Core.Abstractions</RepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <AssemblyOriginatorKeyFile>SubSonicStrongName.snk</AssemblyOriginatorKeyFile>
