@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Kenneth Carter</Authors>
     <Version>4.1.2</Version>
     <SignAssembly>true</SignAssembly>
@@ -13,6 +13,7 @@
     <AssemblyOriginatorKeyFile>SubSonicStrongName.snk</AssemblyOriginatorKeyFile>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>this package provides access to the public interfaces defined for SubSonic-Core</Description>
   </PropertyGroup>
    
   <ItemGroup>
