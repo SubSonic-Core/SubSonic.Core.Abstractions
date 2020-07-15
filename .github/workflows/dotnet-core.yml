@@ -1,7 +1,9 @@
 name: .NET Core
 
-on:
+on:  
   push:
+    tags: 
+      - v*
     branches: [ master ]
   pull_request:
     branches: [ master ]
