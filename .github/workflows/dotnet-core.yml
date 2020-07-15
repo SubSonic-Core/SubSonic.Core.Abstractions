@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      version: 4.1.2
+      VERSION: 4.1.2
 
     steps:
     - uses: actions/checkout@v2
@@ -30,6 +30,6 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Create Packages
-      run: dotnet pack --configuration Release --output ../nupkgs -p:PackageVersion=${{env.version}}
+      run: dotnet pack --configuration Release --output ../nupkgs -p:PackageVersion=${{env.VERSION}}
     - name: Deploy Package GitHub Registry
-      run: dotnet nuget push -k ${{secrets.PUBLISH_GITHUB_TOKEN}} ../nupkgs/*.${{env.version}}.nupkg --skip-duplicate
+      run: dotnet nuget push -k ${{secrets.PUBLISH_GITHUB_TOKEN}} ../nupkgs/*.${{env.VERSION}}.nupkg --skip-duplicate
