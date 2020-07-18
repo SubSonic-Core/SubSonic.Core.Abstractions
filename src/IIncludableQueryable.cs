@@ -6,8 +6,14 @@ using System.Linq;
 namespace SubSonic
 {
     public interface IIncludableQueryable<out TEntity, out Property>
-        : IQueryable<TEntity>, IEnumerable<TEntity>, IQueryable, IEnumerable
+        : IIncludableQueryable, IQueryable<TEntity>, IEnumerable<TEntity>
     { 
+        
+    }
+
+    public interface IIncludableQueryable
+        : IQueryable, IEnumerable
+    {
         Type PropertyType { get; }
     }
 }
