@@ -9,8 +9,6 @@ namespace SubSonic.Schema
         Table = 0,
         TableType,
         View,
-        Procedure,
-        ScalarFunction,
-        TableFunction
+        Programmability
     }
 }
